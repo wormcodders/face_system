@@ -1,0 +1,11 @@
+# Face Recognition System Config
+
+system:
+  use_gpu: false         # true = CUDA if available, false = CPU
+  confidence_threshold: 0.5
+  recognition_threshold: 0.9
+
+paths:
+  face_db: "database/faces.pkl"
+  yolov8_model: "models/yolov8n-face.pt"
+  arcface_model: "models/arcface.onnx"
